@@ -220,7 +220,7 @@ function main() {
     const { url, id, nickname, remark } = user;
     // 生成输出目录名：优先使用 ID，否则使用昵称或序号
     const dirName = id || nickname || `unknown_${i + 1}`;
-    const accountDir = path.join(outputRoot, `account_${dirName}`);
+    const accountDir = path.join(outputRoot, `${dirName}`);
 
     try {
       const options = { maxScroll };

@@ -1,0 +1,21 @@
+{
+  "started_at": "2026-08-23T18:32:02.818Z",
+  "input_file": "/home/polaris/git/douyin-benchmark/users.xlsx",
+  "total_accounts": 1,
+  "results": [
+    {
+      "index": 1,
+      "id": 63811341577,
+      "nickname": "(未知)",
+      "url": "https://v.douyin.com/wWhoI4B5Yt0/",
+      "remark": "",
+      "output_dir": "/home/polaris/git/douyin-benchmark/batch_output/account_63811341577",
+      "success": false,
+      "exit_code": 1,
+      "processed_at": "2026-08-23T18:32:34.215Z"
+    }
+  ],
+  "completed_at": "2026-08-23T18:32:34.216Z",
+  "success_count": 0,
+  "failed_count": 1
+}
