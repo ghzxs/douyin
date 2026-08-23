@@ -1,0 +1,24 @@
+{
+  "name": "douyin-benchmark",
+  "version": "1.1.2",
+  "description": "拆抖音对标 · 采集公开作品数据，显式标注完整性，并产出证据透明的对标调研报告。Agent-friendly skill.",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "login": "node scripts/login.js",
+    "benchmark": "node scripts/run_benchmark.js",
+    "all": "node scripts/batch_process.js",
+    "capture": "node scripts/capture_account_full.js",
+    "resolve": "node scripts/resolve_secuid.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "playwright": "^1.47.0",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "xlsx": "^0.18.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

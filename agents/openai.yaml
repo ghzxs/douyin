@@ -1,0 +1,4 @@
+interface:
+  display_name: "抖音账号对标"
+  short_description: "采集公开作品数据并生成完整性可核验、证据透明的抖音账号对标报告"
+  default_prompt: "Use $douyin-benchmark 对这个公开抖音账号做证据透明的对标分析。"

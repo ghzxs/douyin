@@ -1,0 +1,25 @@
+# 依赖
+node_modules/
+__pycache__/
+*.pyc
+
+# 登录态（绝不提交！包含浏览器会话 / cookie）
+chrome-profile/
+.douyin-benchmark/
+**/profile/
+
+# 采集产物与个人数据（绝不提交他人账号数据）
+output/
+douyin-benchmark-output/
+*account_full_raw.json
+*report_data.json
+*run_status.json
+调研报告.md
+调研报告.html
+*.png
+*.mp4
+*.xlsx
+
+# 系统
+.DS_Store
+*.tmp
