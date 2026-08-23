@@ -116,7 +116,7 @@ function pickStats(aweme) {
     aweme_id: aweme.aweme_id,
     title: (aweme.desc || '').replace(/\s+/g, ' ').trim(),
     create_time: aweme.create_time || null,
-    create_date: aweme.create_time ? new Date(aweme.create_time * 1000).toISOString().slice(0, 10) : null,
+    create_date: aweme.create_time ? new Date(aweme.create_time * 1000).toLocaleString() : null,
     duration_s: aweme.video?.duration
       ? Math.round(aweme.video.duration / 1000)
       : aweme.duration ? Math.round(aweme.duration / 1000) : null,

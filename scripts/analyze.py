@@ -187,11 +187,13 @@ if dates:
     span_lo, span_hi = dates[0], dates[-1]
     y0, m0 = int(span_lo[:4]), int(span_lo[5:7])
     y1, m1 = int(span_hi[:4]), int(span_hi[5:7])
-    months = max(1, (y1 - y0) * 12 + (m1 - m0) + 1)
+    # 修复：计算月份差，包含首尾
+    months = (y1 - y0) * 12 + (m1 - m0) + 1
+    months = max(1, months)  # 至少为1
     span = f'{span_lo} ~ {span_hi}'
 else:
     months, span = None, '—'
-
+    
 mix = defaultdict(lambda: [0, 0])
 for item in works:
     key = item.get('mix_name') or '散篇'
