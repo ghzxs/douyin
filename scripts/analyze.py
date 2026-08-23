@@ -1,4 +1,4 @@
-1# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 # 聚合分析：account_full_raw.json → report_data.json。缺失值保持 null，不转成 0。
 # 支持按时间周期筛选作品：--days N / --months N / --since YYYY-MM-DD
 import json
@@ -309,7 +309,7 @@ output = {
         'vlow': sum(1 for value in diggs if value < 10000),
     },
     'top_viral': [slim(item) for item in sorted(works, key=lambda value: -value['digg_count'])[:12]],
-    'latest': [slim(item) for item in sorted(works_all_filtered, key=lambda value: value.get('create_time') or 0, reverse=True)[:12]],
+    'latest': [slim(item) for item in sorted(works_all_filtered, key=lambda value: value.get('create_date') or '', reverse=True)[:12]],
     'collections': data.get('collections') or [],
     'mix_groups': mix_groups,
     'trend': trend,
